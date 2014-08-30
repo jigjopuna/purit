@@ -1,0 +1,44 @@
+@media all and (max-width: 660px) {
+  /* slide menu top and bottom */
+  nav.slide-menu-top ul,
+  nav.slide-menu-bottom ul,
+  nav.push-menu-top ul,
+  nav.push-menu-bottom ul {
+    padding: 35px 0 0 0;
+  }
+
+  nav.slide-menu-top a,
+  nav.slide-menu-bottom a,
+  nav.push-menu-top a,
+  nav.push-menu-bottom a {
+    line-height: 30px;
+    padding: 0 2px;
+    font-size: 12px;
+  }
+
+  nav.slide-menu-top button.close-menu,
+  nav.slide-menu-bottom button.close-menu,
+  nav.push-menu-top button.close-menu,
+  nav.push-menu-bottom button.close-menu {
+    line-height: 30px;
+    padding: 0 2px;
+  }
+
+  #main form {
+    width: 100%;
+  }
+  #main form > div > label {
+    float: none;
+    width: 100%;
+  }
+  #main form > div > div {
+    float: none;
+    width: 100%;
+  }
+  #main form > div > div input, #main form > div > div select {
+    margin: 0 1%;
+    width: 80%;
+  }
+
+  /*-- end #main form--*/
+}

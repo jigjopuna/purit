@@ -1,0 +1,37 @@
+doctype
+html
+	head
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(charset="utf-8")
+		title Account
+		link(rel="stylesheet" type="text/css" href="account/css/main.css")
+		link(rel="stylesheet" type="text/css" href="account/font/stylesheet.css")
+	body
+		#wrapper 
+			header 
+				h1 SAVE MONEY
+			#content
+				form(method="post" action="account/saveDB/save_money.php")
+					div 
+						label Type of Product
+						div
+							select(name="cate" id="cate")
+								option(value=0) Select One 
+								option(value=1) FOOD
+								option(value=2) DRINK
+								option(value=3) OIL
+								option(value=4) Fruit
+								option(value=5) Jerney
+								option(value=99) OTHTER
+					div 
+						label Description
+						div
+							input(type="text" id="other" name="other")
+					div 
+						label Amount
+						div
+							input(type="text" id="amonth" name="amonth")
+					
+					input(type="submit" id="send" value="SEND")
+					
+							

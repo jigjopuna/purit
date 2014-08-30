@@ -1,0 +1,106 @@
+doctype
+html
+	head
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(charset="utf-8")
+		title slide mene transition
+		link(type="text/css" rel="stylesheet" href="../css/style.css")
+		link(type="text/css" rel="stylesheet" href="../css/media_query/tablet.css")
+		link(type="text/css" rel="stylesheet" href="../css/media_query/tabletSmall.css")
+		link(type="text/css" rel="stylesheet" href="../css/media_query/mobile.css")
+		link(type="text/css" rel="stylesheet" href="../css/base.css")
+		link(type="text/css" rel="stylesheet" href="../font/stylesheet.css")
+		script(src="../js/jquery-1.11.1.min.js")
+		script(src="../js/main.js")
+	body 
+		nav(class="menu slide-menu-left")
+			ul
+				li 
+					button(class="close-menu") &larr; Close
+				li 
+					a(href="#") HOME
+				li
+					a(href="#") Tomato
+				li
+					a(href="#") Cucumber
+				li
+					a(href="#") Kale
+				li
+					a(href="#") CONTACT 
+		nav(class="menu push-menu-left")
+			ul
+				li 
+					button(class="close-menu") &larr; Close
+				li 
+					a(href="#") Braccoli
+				li
+					a(href="#") Tomato
+				li
+					a(href="#") Cucumber
+				li
+					a(href="#") Kale
+				li
+					a(href="#") garlic
+		#wrapper
+			.info-bar
+				.container
+			header
+				.brading
+					.container.clearfix
+						.logo
+							img
+						.name purit chokeutsaha
+						.social
+				.site-title
+					.container
+						h1 My home pages.
+
+			#main
+				.container
+					.buttons
+						button(class="nav-toggler toggle-slide-left") MENU
+						button(class="nav-toggler toggle-push-left") MENU
+				section(class="content")
+					h1 Please recode your charge.
+					form(method="post" action="../saveDB/save_money.php")
+						div 
+							label Type of Product
+							div
+								select(name="cate" id="cate")
+									option(value=0) Select One 
+									option(value=1) FOOD
+									option(value=2) DRINK
+									option(value=3) OIL
+									option(value=4) Fruit
+									option(value=5) Jerney
+									option(value=99) OTHTER
+						div 
+							label Description
+							div
+								input(type="text" id="other" name="other")
+						div 
+							label Amount
+							div
+								input(type="text" id="amonth" name="amonth")
+						
+						input(type="submit" id="send" value="SEND")
+				section(class="pay_history")
+					h1 history
+					table
+						thead
+							td Product
+							td Total
+							td Time
+						tr
+							td 777
+							td 8888
+							td 8888
+				section(id="week")
+					h1
+				section(id="month")
+					h1
+			footer
+		script(src="../js/classie.js")
+		script(src="../js/nav.js")
+
+

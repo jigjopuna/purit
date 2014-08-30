@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" size="196x196" href="icon.png">
+		<title> เว็บ</title>
+		<style>
+			*{
+				
+			}
+			#wrapper{
+				width: 80%;
+				height: 250px;
+				background: #ccc;
+				margin: 10px auto;
+				border: 1px dashed brown;
+				position: relative;
+			}
+			.box{
+				width: 8%;
+				height: 30px;
+				background: yellow;
+				border: 1px solid green;
+				left: 0%;
+				position: absolute;
+				
+				-webkit-transition: all 2s;
+				-moz-transition: all 2s;
+				transition: all 2s;
+			}
+			#box1{
+				top: 0%;
+				/*-webkit-transition-timing-function: linear;*/
+				-webkit-transition-delay: 0s;
+			}
+			#box2{
+				top: 10%;
+				/*-webkit-transition-timing-function: ease;*/
+				-webkit-transition-delay: 0.1s;
+			}
+			#box3{
+				top: 20%;
+				/*-webkit-transition-timing-function: ease-in;*/
+				-webkit-transition-delay: 0.2s;
+			}
+			#wrapper:hover .box{
+				background: red;
+				left: 92%;
+				/*opacity: 0.2;*/
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div class="box" id="box1">box1</div>
+			<div class="box" id="box2">box2</div>
+			<div class="box" id="box3">box3</div>
+		</div><!--end wrapper-->
+	<body>
+</html>
+<!--
+	https://developer.chrome.com/multidevice/android/installtohomescreen
+    http://stackoverflow.com/questions/1120174/css-class-priorities     score css id and class
+-->

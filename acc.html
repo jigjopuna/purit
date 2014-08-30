@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Account</title>
+    <link rel="stylesheet" type="text/css" href="account/css/main.css">
+    <link rel="stylesheet" type="text/css" href="account/font/stylesheet.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>SAVE MONEY</h1>
+      </header>
+      <div id="content">
+        <form method="post" action="account/saveDB/save_money.php">
+          <div>
+            <label>Type of Product</label>
+            <div>
+              <select name="cate" id="cate">
+                <option value="0">Select One </option>
+                <option value="1">FOOD</option>
+                <option value="2">DRINK</option>
+                <option value="3">OIL</option>
+                <option value="4">Fruit</option>
+                <option value="5">Jerney</option>
+                <option value="99">OTHTER</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label>Description</label>
+            <div>
+              <input type="text" id="other" name="other">
+            </div>
+          </div>
+          <div>
+            <label>Amount</label>
+            <div>
+              <input type="text" id="amonth" name="amonth">
+            </div>
+          </div>
+          <input type="submit" id="send" value="SEND">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

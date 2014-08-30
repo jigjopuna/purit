@@ -1,0 +1,12 @@
+@media all and (max-width: 860px) {
+   #month table, #week table{width:100%;}
+  .buttons br {
+    display: none; }
+
+  .buttons button {
+    padding: 10px 20px; }
+
+  #box {
+    width: 60%;
+    height: 100px;
+    background: yellow; } }
